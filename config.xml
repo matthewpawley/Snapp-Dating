@@ -13,6 +13,7 @@
     </author>
 
     <icon src="icon.png" />
+    <gap:splash src="splash.png" />
 
     <!-- Platforms to build into -->
     <gap:platform name="android" />
@@ -23,5 +24,6 @@
     <!-- Plugins -->
     <gap:plugin name="org.apache.cordova.vibration" version="0.3.7" />
     <gap:plugin name="hu.dpal.phonegap.plugins.spinnerdialog" version="0.1.5" />
+    <gap:plugin name="org.apache.cordova.SplashScreen" />
 
 </widget>

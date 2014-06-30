@@ -6,7 +6,7 @@ $(function(){
     }).data('royalSlider');
 
 
-    $(document).on('click', '.option', function(e){
+    $(document).on('click touchstart', '.option', function(e){
         e.preventDefault();
         $('.option').removeClass('active');
         $(this).addClass('active');
