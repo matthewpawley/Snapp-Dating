@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic);
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Asap', sans-serif;
+  color: #464646;
+}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+:first-child {
+  margin-top: 0;
+}
+:last-child {
+  margin-bottom: 0;
+}
+p {
+  margin: 0 0 8px 0;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.relative {
+  position: relative;
+}
+#dating .full-size {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#dating .curtain {
+  background-image: url('graphics/curtain.png');
+  background-size: cover;
+  background-color: #57140c;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 0.6s;
+}
+#dating .animation {
+  background-size: cover;
+  background-position: center center;
+  background-image: url('animation.gif');
+  z-index: 1;
+}
+#dating .button {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 200px;
+  width: 150px;
+  height: 150px;
+  line-height: 135px;
+  text-align: center;
+  margin: -75px 0 0 -75px;
+  background: #3079A2;
+  border: 10px solid #FFF;
+  color: #FFF!important;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#dating .show .button {
+  opacity: 0;
+}
+#dating .show .curtain {
+  background-color: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+}
+#introduction {
+  text-align: center;
+  background-image: url("../graphics/backgrounds/introduction.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  padding: 20px;
+  color: #FFF;
+  font-style: italic;
+}
+#introduction .continue {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 1.5s;
+}
+#introduction h1 {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+}
+#introduction p {
+  line-height: 22px;
+}
+#introduction .button {
+  padding: 10px 20px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#introduction .facebook-login {
+  border: none;
+  background: #3079A2;
+}
+#introduction .quater {
+  position: absolute;
+  height: 25%;
+  left: 0;
+  right: 0;
+}
+#introduction .step-three {
+  height: 100vh;
+}
+#introduction .step-three .option {
+  background: rgba(238, 229, 229, 0.54);
+  color: #444;
+  border-radius: 10px;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+#introduction .step-three .option h3 {
+  margin-bottom: 5px;
+}
+#introduction .step-three .tick-box {
+  float: left;
+  width: 25%;
+  height: 100%;
+  background: rgba(238, 229, 229, 0.54);
+  border-radius: 10px;
+  position: relative;
+}
+#introduction .step-three .tick-box + div {
+  width: 75%;
+  padding-left: 10px;
+  text-align: left;
+}
+#introduction .step-three .active {
+  background: #FFF;
+}
+#introduction .step-three .active .tick-box {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+}
+#introduction .step-three .active .tick-box:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: 'icomoon';
+  content: "\f087";
+  color: #464646;
+  font-size: 35px;
+  line-height: 90px;
+  text-align: center;
+}
+#introduction .quater:first-child {
+  top: 0%;
+}
+#introduction .quater:first-child + .quater {
+  top: 25%;
+  padding-bottom: 5px;
+}
+#introduction .quater:first-child + .quater + .quater {
+  top: 50%;
+  padding: 5px 0;
+}
+#introduction .quater:first-child + .quater + .quater + .quater {
+  top: 75%;
+  padding-top: 5px;
+}
+#introduction .quater:first-child .inner {
+  padding: 10px;
+}

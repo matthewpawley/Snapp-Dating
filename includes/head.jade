@@ -1,0 +1,7 @@
+head
+    - files = ["fonts.css", "royalslider.css", "animate.css", "layout.css"]
+    each css in files
+        link(href="css/" + css, type="text/css", rel="stylesheet")
+
+    script(type="text/javascript", src="js/jquery-2.1.0.min.js")
+    title Snapp Dating
