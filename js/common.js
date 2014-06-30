@@ -12,5 +12,14 @@ $(function(){
         $(this).addClass('active');
     });
 
+    $(document).on('click', '.link', function(e){
+        e.preventDefault();
+        var $this = $(this);
+        $('body').addClass('loading');
+        $('main').load('includes/' + $this.attr('href') + '.html', function(){
+            $('body').removeClass('loading');
+        });
+    });
+
 });
 
